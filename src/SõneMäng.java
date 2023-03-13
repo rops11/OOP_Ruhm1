@@ -5,7 +5,7 @@ public class SõneMäng {
         Mängija mängija = new Mängija();
         boolean mängKäib = true;
 
-        System.out.println("Mängija peab ära arvama õige sõna. \n1) Suur täht tähistab ära arvatud tähte\n2) Väike täht tähistab tähte, mis vales kohas\n3) \"_\" tähistab ei sellist tähte pole sõnas");
+        System.out.println("Mängija peab ära arvama õige sõna. \n1) Suur täht tähistab äraarvatud tähte\n2) Väike täht tähistab tähte, mis vales kohas\n3) \"_\" tähistab ei sellist tähte pole sõnas");
         SõneAnalüsaator sõneAnalüsaator = mängija.uusMäng(sõneLugeja.arvatavSõna(), 3);
 
         while (mängKäib) {
