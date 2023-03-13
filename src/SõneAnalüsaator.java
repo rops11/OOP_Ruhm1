@@ -4,10 +4,27 @@ import java.util.Map;
 public class SõneAnalüsaator {
     //Insediväljad
     private String õigeVastus;
+    private int lubatudKatsied;
+    private int katse;
 
     //Konstruktor
-    public SõneAnalüsaator(String õigeVastus) {
+    public SõneAnalüsaator(String õigeVastus, int lubatudKatsied) {
         this.õigeVastus = õigeVastus.toLowerCase();
+        this.lubatudKatsied = lubatudKatsied;
+        this.katse = 0;
+    }
+
+    //Get
+    public int getLubatudKatsied() {
+        return lubatudKatsied;
+    }
+    public int getKatse() {
+        return katse;
+    }
+
+    //Set
+    public void setKatse(int katse) {
+        this.katse = katse;
     }
 
     //Meetodid
@@ -79,8 +96,19 @@ public class SõneAnalüsaator {
 
     /*test
     public static void main(String[] args) {
-        SõneAnalüsaator sõneAnalüsaator = new SõneAnalüsaator("koer");
-        System.out.println(sõneAnalüsaator.kontrolliVastust("kaks"));
+        SõneAnalüsaator sõneAnalüsaator = new SõneAnalüsaator("koer",3);
+        if (sõneAnalüsaator.getKatse() < sõneAnalüsaator.getLubatudKatsied()) {
+            sõneAnalüsaator.setKatse(sõneAnalüsaator.getKatse()+1);
+            sõneAnalüsaator.kontrolliVastust("kaks");
+        }
+        if (sõneAnalüsaator.getKatse() < sõneAnalüsaator.getLubatudKatsied()) {
+            sõneAnalüsaator.setKatse(sõneAnalüsaator.getKatse()+1);
+            sõneAnalüsaator.kontrolliVastust("kass");
+        }
+        if (sõneAnalüsaator.getKatse() < sõneAnalüsaator.getLubatudKatsied()) {
+            sõneAnalüsaator.setKatse(sõneAnalüsaator.getKatse()+1);
+            sõneAnalüsaator.kontrolliVastust("kaer");
+        }
     }
     */
 }
