@@ -14,6 +14,10 @@ public class SõneAnalüsaator {
         this.katse = 0;
     }
 
+    public String getÕigeVastus() {
+        return õigeVastus;
+    }
+
     //Get
     public int getLubatudKatsied() {
         return lubatudKatsied;
