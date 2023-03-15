@@ -24,7 +24,7 @@ public class Mängija {
     }
 
     public SõneAnalüsaator uusMäng(String arvatavSõna, int katseid) {
-        System.out.println("uue arvatava sõna pikkus on " + arvatavSõna.length() + " tähte");
+        System.out.println("Uue arvatava sõna pikkus on " + arvatavSõna.length() + " tähte.");
         return new SõneAnalüsaator(arvatavSõna,katseid);
     }
 }

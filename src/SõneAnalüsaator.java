@@ -14,14 +14,15 @@ public class SõneAnalüsaator {
         this.katse = 0;
     }
 
+    //Get
     public String getÕigeVastus() {
         return õigeVastus;
     }
 
-    //Get
     public int getLubatudKatsied() {
         return lubatudKatsied;
     }
+
     public int getKatse() {
         return katse;
     }
@@ -33,8 +34,8 @@ public class SõneAnalüsaator {
 
     //Meetodid
     public Map<Character, Integer> unikaalseteSümboliteArv(String sõne) {
+        //loeme kokku mitu erinevat tähte sõnes esineb
         HashMap<Character, Integer> tagasta = new HashMap<>();
-
         for (int i = 0; i < sõne.length(); i++) {
             char täht = sõne.charAt(i);
             if (tagasta.containsKey(täht)) {
@@ -47,10 +48,7 @@ public class SõneAnalüsaator {
         return tagasta;
     }
     public boolean kontrolliVastust(String pakumine) {
-        //Kuvab suurt tähte, kui täht on õiges kohas
-        //Kuvab väikest tähte, kui sisaldab tähte, aga täht on vales kohas
-        //Kuvab "_", kui tähte ei ole üldse sõnas või samu tähti on üleliia.
-
+        //ei pea oluliseks, kas mängija sisestab suuri või väikeseid tähti
         pakumine = pakumine.toLowerCase();
 
         //Kontrollime, et sõne pikkus oleks sama, mis vastusel
@@ -61,15 +59,18 @@ public class SõneAnalüsaator {
 
         //Kontrollime, kas vastati õigesti
         if (pakumine.equals(õigeVastus)) {
-            return true;
+            return true; //Sõna on ära arvatud
         }
 
-        //Kontrollime, mis tähed õigesti vastati
+        //Kontrollime, mis tähed õigesti arvati
         String vihje = "";
         String[] tähedPakumine = pakumine.split("");
         String[] tähedÕigeVastus = õigeVastus.split("");
         Map<Character, Integer> uniaalseteSümboliteArvVastus = unikaalseteSümboliteArv(õigeVastus);
 
+        //Kuvab suurt tähte, kui täht on õiges kohas
+        //Kuvab väikest tähte, kui sisaldab tähte, aga täht on vales kohas
+        //Kuvab "_", kui tähte ei ole üldse sõnas või samu tähti on üleliia.
         for (int i = 0; i < tähedPakumine.length; i++) {
             char otsitavSümbol = tähedPakumine[i].charAt(0);
 
@@ -93,26 +94,6 @@ public class SõneAnalüsaator {
         }
 
         System.out.println(vihje);
-
-        return false;
+        return false; //Sõna ei ole ära arvatud
     }
-
-
-    /*test
-    public static void main(String[] args) {
-        SõneAnalüsaator sõneAnalüsaator = new SõneAnalüsaator("koer",3);
-        if (sõneAnalüsaator.getKatse() < sõneAnalüsaator.getLubatudKatsied()) {
-            sõneAnalüsaator.setKatse(sõneAnalüsaator.getKatse()+1);
-            sõneAnalüsaator.kontrolliVastust("kaks");
-        }
-        if (sõneAnalüsaator.getKatse() < sõneAnalüsaator.getLubatudKatsied()) {
-            sõneAnalüsaator.setKatse(sõneAnalüsaator.getKatse()+1);
-            sõneAnalüsaator.kontrolliVastust("kass");
-        }
-        if (sõneAnalüsaator.getKatse() < sõneAnalüsaator.getLubatudKatsied()) {
-            sõneAnalüsaator.setKatse(sõneAnalüsaator.getKatse()+1);
-            sõneAnalüsaator.kontrolliVastust("kaer");
-        }
-    }
-    */
 }
