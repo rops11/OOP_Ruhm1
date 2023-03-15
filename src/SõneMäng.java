@@ -23,6 +23,8 @@ public class SõneMäng {
                 Scanner sisend = new Scanner(System.in);
                 String otsus = sisend.nextLine();
                 if (otsus.equals("ei")){
+                    System.out.println();
+                    System.out.println("Oled arvanud ära :"+mängija.getVõite()+" sõna ja oled kaotanud : "+mängija.getKaotusi()+" korda. Sinu skoor on "+(mängija.getVõite()-mängija.getKaotusi()));
                     break;
                 }
                 sõneAnalüsaator = mängija.uusMäng(sõneLugeja.arvatavSõna(), 3);
@@ -36,12 +38,13 @@ public class SõneMäng {
                 System.out.println("Kas soovite jätkata? (ei/jah)");
                 Scanner sisend = new Scanner(System.in);
                 String otsus = sisend.nextLine();
+                mängija.setKaotusi(mängija.getKaotusi()+1);
                 if (otsus.equals("ei")) {
+                    System.out.println("Oled arvanud ära :"+mängija.getVõite()+" sõna ja oled kaotanud : "+mängija.getKaotusi()+" korda. Sinu skoor on "+(mängija.getVõite()-mängija.getKaotusi()));
                     mängKäib = false;
                     break;
                 }
                 if (otsus.equals("jah")){
-                    mängija.setKaotusi(mängija.getKaotusi()+1);
                     sõneAnalüsaator = mängija.uusMäng(sõneLugeja.arvatavSõna(), 3);
                 }
 
