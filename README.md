@@ -8,7 +8,7 @@ Kuidas käivitada? -> Mängu saab käivitada command promptis.
 
 Kuidas mängida? -> Mängija peab ära arvama õige sõna. 
 * Suur täht tähistab äraarvatud tähte
-* Väike täht tähistab tähte, mis vales kohas
+* Väike täht tähistab tähte, mis on vales kohas
 * "_" tähistab, et sellist tähte pole sõnas
 
 Klassid
