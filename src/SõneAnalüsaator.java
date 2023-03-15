@@ -47,42 +47,42 @@ public class SõneAnalüsaator {
 
         return tagasta;
     }
-    public boolean kontrolliVastust(String pakumine) {
+    public boolean kontrolliVastust(String pakkumine) {
         //ei pea oluliseks, kas mängija sisestab suuri või väikeseid tähti
-        pakumine = pakumine.toLowerCase();
+        pakkumine = pakkumine.toLowerCase();
 
         //Kontrollime, et sõne pikkus oleks sama, mis vastusel
-        if (õigeVastus.length() != pakumine.length()) {
-            System.out.println("Sõne pikkus ei klapi (oodati " + õigeVastus.length() + " tähte, saadi " + pakumine.length() + " tähte)");
+        if (õigeVastus.length() != pakkumine.length()) {
+            System.out.println("Sõne pikkus ei klapi (oodati " + õigeVastus.length() + " tähte, saadi " + pakkumine.length() + " tähte)");
             return false;
         }
 
         //Kontrollime, kas vastati õigesti
-        if (pakumine.equals(õigeVastus)) {
+        if (pakkumine.equals(õigeVastus)) {
             return true; //Sõna on ära arvatud
         }
 
         //Kontrollime, mis tähed õigesti arvati
         String vihje = "";
-        String[] tähedPakumine = pakumine.split("");
+        String[] tähedpakkumine = pakkumine.split("");
         String[] tähedÕigeVastus = õigeVastus.split("");
         Map<Character, Integer> uniaalseteSümboliteArvVastus = unikaalseteSümboliteArv(õigeVastus);
 
         //Kuvab suurt tähte, kui täht on õiges kohas
         //Kuvab väikest tähte, kui sisaldab tähte, aga täht on vales kohas
         //Kuvab "_", kui tähte ei ole üldse sõnas või samu tähti on üleliia.
-        for (int i = 0; i < tähedPakumine.length; i++) {
-            char otsitavSümbol = tähedPakumine[i].charAt(0);
+        for (int i = 0; i < tähedpakkumine.length; i++) {
+            char otsitavSümbol = tähedpakkumine[i].charAt(0);
 
-            if (tähedPakumine[i].equals(tähedÕigeVastus[i])) {
-                vihje += tähedPakumine[i].toUpperCase();
+            if (tähedpakkumine[i].equals(tähedÕigeVastus[i])) {
+                vihje += tähedpakkumine[i].toUpperCase();
                 uniaalseteSümboliteArvVastus.put(otsitavSümbol, uniaalseteSümboliteArvVastus.get(otsitavSümbol) - 1);
                 if (uniaalseteSümboliteArvVastus.get(otsitavSümbol) < 1) {
                     uniaalseteSümboliteArvVastus.remove(otsitavSümbol);
                 }
             }
             else if (uniaalseteSümboliteArvVastus.containsKey(otsitavSümbol)) {
-                vihje += tähedPakumine[i].toLowerCase();
+                vihje += tähedpakkumine[i].toLowerCase();
                 uniaalseteSümboliteArvVastus.put(otsitavSümbol, uniaalseteSümboliteArvVastus.get(otsitavSümbol) - 1);
                 if (uniaalseteSümboliteArvVastus.get(otsitavSümbol) < 1) {
                     uniaalseteSümboliteArvVastus.remove(otsitavSümbol);
