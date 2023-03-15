@@ -1,17 +1,15 @@
 # OOP 1. Rühmatöö
 Autorid: Robert Ivask ja Vladimir Makarenkov
 
-Kuidas kasutada?
-<br>
-Mängu saab käivitada command promptis.
-1) Avada cmd.exe
+Kuidas käivitada? -> Mängu saab käivitada command promptis.
+1) Ava cmd.exe
 2) Liigu cd käsuga mängu kausta
 3) Kirjuta java SõneMäng
-<br>
-Mängija peab ära arvama õige sõna. 
+
+Kuidas mängida? -> Mängija peab ära arvama õige sõna. 
 * Suur täht tähistab äraarvatud tähte
 * Väike täht tähistab tähte, mis vales kohas
-* \"_\" tähistab et sellist tähte pole sõnas"
+* "_" tähistab et sellist tähte pole sõnas"
 
 Klassid
 * SõneMäng on peaklass, milles toimub mängu tsükkel.
