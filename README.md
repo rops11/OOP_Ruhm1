@@ -21,6 +21,12 @@ Projekti töökäik
 * projekti põhjalik kirjeldus, kus on kirjas programmi eesmärk ja selgitus programmi üldisest tööst, vajadusel lühike kasutusjuhis;
 * Projekti tegemise alguses oli vaja teha selgeks programmi idee ja põhimõte. Peale seda teha kindlaks, mis klassid ja meetodid on vaja luua. Peale seda jagasime oma vahel tööülesanded ja hakkasime klasse looma. Robert tegeles sõneMängu,sõneAnalüsaatori ja Mängija klassidega. Vladimir tegeles sõneLugeja ja sõneMängu klassidega. Roberti ülesanne oli seadistada mängu tööpõhimõte sõneAnalüsaator klassis, Vladimiri ülesanne oli lugeda failist adnmed ja seadistada need mängu tsüklisse. Lõpuks tegime mõlemad viimistlused mängu tsüklis, et see oleks nii huvitav, kui ka mugav ja arvestaks erinevate mängija valikutega.
 * Robert tegeles sõneAnalüsaatori ja Mängija klassidega ja kõikide meetoditega nendes ning realiseeris neid sõneMäng klassis. Kokku selleks kulus umbes 6 tundi. Vladimir tegeles sõneLugeja klassiga ja kõikide meetoditega selles ning realiseeris neid sõneMäng klassis. Kokku selleks kulus umbes 5 tundi.
-* tegemise mured (nt millistest teadmistest/oskustest tundsite projekti tegemisel puudust);
-* hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab arendamist);
-* Me algul testisime meetodeid, kui programm valmis sai tegime veel ühe testimise, kus katsetasime kõiki erinevaid sisendeid käsitsi, mida kasutaja võiks sisestada.
+
+Tegemise mured
+*Üldiselt projekti tegemisel ei esinenud probleeme ning see valmis sujuvalt.
+
+Hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab arendamist);
+* Tuli hästi välja ülesannete jagamine, nii, et programmi koostamine möödus ladusasti. Samuti ka programmi planeeritud põhimõte sai täidetud.
+* Töö valmimisel tekkis uusi ideid, mida ei realiseeritud, kuna nad polnud algses projekti plaanis.
+
+
