@@ -29,4 +29,6 @@ Hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab are
 * Tuli hästi välja ülesannete jagamine, nii, et programmi koostamine möödus ladusasti. Samuti ka programmi planeeritud põhimõte sai täidetud.
 * Töö valmimisel tekkis uusi ideid, mida ei realiseeritud, kuna nad polnud algses projekti plaanis.
 
+Selgitus ja/või näited, kuidas programmi osi eraldi ja programmi tervikuna testisite ehk kuidas veendusite, et programm töötab korrektselt.
+* Testisime alguses programmi meetodeid eraldi, peale seda panime SõneMäng klassi suvalised sõnad käsitsi, et kontrollida programmi üldist tööd. Peale seda ühendasime peameetodi tsüklis mängu meetodid failist saadavate sõnadega ja vaatasime programmi tööd.
 
