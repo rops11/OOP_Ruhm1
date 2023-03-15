@@ -6,4 +6,4 @@ Autorid: Robert Ivask ja Vladimir Makarenkov
 * iga rühmaliikme panus (sh tehtud klassid/meetodid) ja ajakulu (orienteeruvalt);
 * tegemise mured (nt millistest teadmistest/oskustest tundsite projekti tegemisel puudust);
 * hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab arendamist);
-* Me algul testisime meetodeid. Kui programm valmis sai tegime veel ühe testimise, kus katsetasime kõiki erinevaid sisendeid käsitsi, mida kasutaja võiks sisestada.
+* Me algul testisime meetodeid, kui programm valmis sai tegime veel ühe testimise, kus katsetasime kõiki erinevaid sisendeid käsitsi, mida kasutaja võiks sisestada.
