@@ -1,6 +1,8 @@
 # OOP 1. Rühmatöö
 Autorid: Robert Ivask ja Vladimir Makarenkov
-
+<br><br>
+Meie tehtud sõna mängu insipratsiooniks oli Wordle 
+<br><br>
 Kuidas käivitada? -> Mängu saab käivitada command promptis.
 1) Ava cmd.exe
 2) Liigu cd käsuga mängu kausta
@@ -23,9 +25,9 @@ Projekti töökäik
 * Robert tegeles sõneAnalüsaatori ja Mängija klassidega ja kõikide meetoditega nendes ning realiseeris neid sõneMäng klassis. Kokku selleks kulus umbes 6 tundi. Vladimir tegeles sõneLugeja klassiga ja kõikide meetoditega selles ning realiseeris neid sõneMäng klassis. Kokku selleks kulus umbes 5 tundi.
 
 Tegemise mured
-*Üldiselt projekti tegemisel ei esinenud probleeme ning see valmis sujuvalt.
+* Üldiselt projekti tegemisel ei esinenud probleeme ning see valmis sujuvalt.
 
-Hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab arendamist);
+Hinnang oma töö lõpptulemusele (millega saite hästi hakkama ja mis vajab arendamist)
 * Tuli hästi välja ülesannete jagamine, nii, et programmi koostamine möödus ladusasti. Samuti ka programmi planeeritud põhimõte sai täidetud.
 * Töö valmimisel tekkis uusi ideid, mida ei realiseeritud, kuna nad polnud algses projekti plaanis.
 
