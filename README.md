@@ -1,7 +1,7 @@
 # OOP 1. Rühmatöö
 Autorid: Robert Ivask ja Vladimir Makarenkov
 <br><br>
-Meie tehtud sõna mängu insipratsiooniks oli Wordle 
+Meie tehtud sõna mängu inspiratsiooniks oli Wordle.
 <br><br>
 Kuidas käivitada? -> Mängu saab käivitada command promptis.
 1) Ava cmd.exe
